@@ -14,6 +14,13 @@ export class SocialPostsComponent {
     }
   ];
 
-  constructor() { }
+  onSubmit() {
+
+  }
+  
+  onDelete() {
+    
+  }
+
 
 }

@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { listOfPosts } from '../social-posts/social-posts.component';
+import { Component, Input } from '@angular/core';
+import { Post } from '../post';
 
 @Component({
   selector: 'app-post',
@@ -7,8 +7,11 @@ import { listOfPosts } from '../social-posts/social-posts.component';
   styleUrls: ['./post.component.css']
 })
 export class PostComponent {
-  post = listOfPosts;
 
-  constructor() { }
+  @Input() post: Post;
+
+  deletePost() {
+
+  }
 
 }
