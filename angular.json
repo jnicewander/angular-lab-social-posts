@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "social-posts-lab"
+    }
+  },
+  "defaultProject": "social-posts-lab",
+  "cli": {
+    "analytics": false
+  }
 }

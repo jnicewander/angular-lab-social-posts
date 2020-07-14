@@ -7,7 +7,7 @@ import { Post } from '../post';
   styleUrls: ['./social-posts.component.css']
 })
 export class SocialPostsComponent {
-  listOfPosts: Post[] = [
+  posts: Post[] = [
     {
       title: "Test Title",
       thought: "Test thought right here, I wish it was longer."
@@ -15,12 +15,11 @@ export class SocialPostsComponent {
   ];
 
   onSubmit() {
-
+    
   }
   
   onDelete() {
-    
-  }
 
+  }
 
 }
