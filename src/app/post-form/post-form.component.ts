@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, Output, Input, EventEmitter } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Post } from '../post';
 
@@ -8,7 +8,7 @@ import { Post } from '../post';
   styleUrls: ['./post-form.component.css']
 })
 export class PostFormComponent {
-
+  @Input() showNewPostForm: boolean;
   @Output() submitted = new EventEmitter<Post>();
 
   submitPost(submitNewPost: NgForm) {

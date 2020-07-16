@@ -1,5 +1,5 @@
 <!-- Input for title and thought passed into event emitter -->
-<form #submitNewPost="ngForm" (ngSubmit)="submitPost(submitNewPost);">
+<form #submitNewPost="ngForm" (ngSubmit)="submitPost(submitNewPost);" *ngIf="showNewPostForm">
     <label for="title"></label>
     <input type="text" id="title" name="title" placeholder="Best Lab Ever" ngModel>
     <label for="thought"></label>

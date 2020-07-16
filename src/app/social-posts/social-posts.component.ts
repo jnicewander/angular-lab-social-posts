@@ -7,12 +7,7 @@ import { Post } from '../post';
   styleUrls: ['./social-posts.component.css']
 })
 export class SocialPostsComponent {
-  posts: Post[] = [
-    {
-      title: "Test Title",
-      thought: "Test thought right here, I wish it was longer."
-    }
-  ];
+  posts: Post[] = [];
 
   onSubmit(event) {
     this.posts.push(event);
@@ -20,6 +15,12 @@ export class SocialPostsComponent {
   
   onDelete() {
 
+  }
+
+  showForm: boolean = false;
+
+  newPost() {
+      this.showForm = !this.showForm;
   }
 
 }

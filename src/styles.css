@@ -14,5 +14,7 @@ html, body {
 }
 
 body {
+    margin: 1rem 10rem;
     background-color: #F3F1F7;
+    text-align: center;
 }
