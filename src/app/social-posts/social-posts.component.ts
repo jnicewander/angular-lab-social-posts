@@ -14,8 +14,8 @@ export class SocialPostsComponent {
     }
   ];
 
-  onSubmit() {
-    // this.posts.push()
+  onSubmit(event) {
+    this.posts.push(event);
   }
   
   onDelete() {

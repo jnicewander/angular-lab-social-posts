@@ -11,7 +11,7 @@ export class PostComponent {
   @Input() post: Post;
 
   deletePost() {
-
+    
   }
 
 }
