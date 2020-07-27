@@ -8,16 +8,12 @@ import { Post } from '../post';
 })
 export class SocialPostsComponent {
   posts: Post[] = [];
+  showForm: boolean;
 
   onSubmit(event) {
     this.posts.push(event);
+    this.showForm = false;
   }
-  
-  onDelete() {
-
-  }
-
-  showForm: boolean = false;
 
   newPost() {
       this.showForm = !this.showForm;
