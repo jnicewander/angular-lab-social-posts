@@ -18,5 +18,6 @@ export class PostFormComponent {
         thought: submitNewPost.value.thought
       }
     );
+    submitNewPost.reset();
   }
 }
